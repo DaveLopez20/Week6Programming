@@ -4,14 +4,26 @@ const music = schedule.indexOf("Listen to Music");
 
 console.log(schedule[music]);
 
-const person = {
+const user = {
     firstName : "Loid",
-    lastName  : "Forger",
     age     : 27,
-    eyeColor  : "blue"
-  };
+    married  : false,
+    purchases: ["phone","car","laptop"],
   
-  let text = Object.values(person)
+
+sayName: function() {
+console.log(this.name);
+}
+};
+
+user.sayName();
+
+function saymyAge(){
+  console.log('My age is ${this}');
+}
+saymyAge();  
+
+  let text = Object.values(user)
   document.getElementById("demo").innerHTML = text;
 
   const games = ["Ace Attorney", "Call of Duty", "Baldur's Gate 3", "Marvel vs. Capcom"];
