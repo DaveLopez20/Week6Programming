@@ -28,3 +28,12 @@ saymyAge();
 
   const games = ["Ace Attorney", "Call of Duty", "Baldur's Gate 3", "Marvel vs. Capcom"];
 document.getElementById("demo").innerHTML = games.toString();
+
+const objects = [
+  ["books", 300],
+  ["games", 500],
+  ["tools", 400]
+  ];
+  
+  const myObj = Object.fromEntries(objects);
+  document.getElementById("start").innerHTML = myObj.games;
